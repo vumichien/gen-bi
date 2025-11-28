@@ -3,10 +3,12 @@ import Image from 'next/image';
 export default function LogoBar() {
   return (
     <Image
-      src="/images/logo-white-with-text.svg"
-      alt="Wren AI"
-      width={125}
+      src="/images/logo.png"
+      alt="Detomo GenBI Platform logo"
+      width={30}
       height={30}
+      style={{ width: 'auto', height: 30 }}
+      priority
     />
   );
 }

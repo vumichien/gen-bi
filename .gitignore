@@ -92,7 +92,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# wren-launcher
+# wren-launcher1
 wren-launcher/dist
 wren-launcher/main
 
@@ -100,3 +100,7 @@ wren-launcher/main
 .tmp
 
 !wren-ai-service/tools/.env.example
+.claude/*
+.opencode/*
+plans/templates/*
+.claude/.env.example

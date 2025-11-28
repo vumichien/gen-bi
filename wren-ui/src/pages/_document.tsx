@@ -32,7 +32,10 @@ export default class AppDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>{this.props.styles}</Head>
+        <Head>
+          {this.props.styles}
+          <link rel="icon" type="image/png" href="/favicon.png" />
+        </Head>
         <body>
           <Main />
           <NextScript />

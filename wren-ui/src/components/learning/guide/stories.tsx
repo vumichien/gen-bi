@@ -397,10 +397,10 @@ const playKnowledgeGuide = (
         ),
         description: renderToString(
           <>
-            Create and manage <b>Question-SQL pairs</b> to refine Wren AI’s SQL
-            generation. You can manually add pairs here or go to Home, ask a
+            Create and manage <b>Question-SQL pairs</b> to refine Detomo GenBI's
+            SQL generation. You can manually add pairs here or go to Home, ask a
             question, and save the correct answer to Knowledge. The more you
-            save, the smarter Wren AI becomes!
+            save, the smarter Detomo GenBI becomes!
           </>,
         ),
         onPopoverRender: (popoverDom: DriverPopoverDOM) => {
@@ -427,8 +427,8 @@ const playKnowledgeGuide = (
           <>
             In addition to Question-SQL pairs, you can create instructions to
             define <b>business rules</b> and <b>query logic</b>. These rules
-            guide Wren AI in applying consistent filters, constraints, and best
-            practices to SQL queries.
+            guide Detomo GenBI in applying consistent filters, constraints, and
+            best practices to SQL queries.
           </>,
         ),
         onPopoverRender: (popoverDom: DriverPopoverDOM) => {
