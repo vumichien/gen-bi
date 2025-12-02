@@ -1,14 +1,17 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Button } from 'antd';
 import styled from 'styled-components';
 import { Path } from '@/utils/enum';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { DiscordIcon, GithubIcon } from '@/utils/icons';
 import SettingOutlined from '@ant-design/icons/SettingOutlined';
 import Home, { Props as HomeSidebarProps } from './Home';
 import Modeling, { Props as ModelingSidebarProps } from './Modeling';
 import Knowledge from './Knowledge';
 import APIManagement from './APIManagement';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import LearningSection from '@/components/learning';
 
 const Layout = styled.div`
@@ -86,13 +89,13 @@ export default function Sidebar(props: Props) {
   return (
     <Layout className="d-flex flex-column">
       <DynamicSidebar {...props} pathname={router.pathname} />
-      <LearningSection />
+      {/* <LearningSection /> */}
       <div className="border-t border-gray-4 pt-2">
         <StyledButton type="text" block onClick={onSettingsClick}>
           <SettingOutlined className="text-md" />
           Settings
         </StyledButton>
-        <StyledButton type="text" block>
+        {/* <StyledButton type="text" block>
           <Link
             className="d-flex align-center"
             href="https://discord.com/invite/5DvshJqG8Z"
@@ -103,8 +106,8 @@ export default function Sidebar(props: Props) {
           >
             <DiscordIcon className="mr-2" style={{ width: 16 }} /> Discord
           </Link>
-        </StyledButton>
-        <StyledButton type="text" block>
+        </StyledButton> */}
+        {/* <StyledButton type="text" block>
           <Link
             className="d-flex align-center"
             href="https://github.com/Canner/WrenAI"
@@ -115,7 +118,7 @@ export default function Sidebar(props: Props) {
           >
             <GithubIcon className="mr-2" style={{ width: 16 }} /> GitHub
           </Link>
-        </StyledButton>
+        </StyledButton> */}
       </div>
     </Layout>
   );
